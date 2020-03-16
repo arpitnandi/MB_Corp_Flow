@@ -1,0 +1,99 @@
+package corporate_pages;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Window;
+import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import generic.Constants;
+
+public class MultipleEntity {
+public WebDriver driver;
+	
+	public MultipleEntity(WebDriver driver)
+	{
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+		
+	}	
+	
+//	@FindBy(xpath="//button[@class='btn btn-default']")
+//	WebElement popup;
+//	
+//	public void pop() {
+//		popup.click();
+//	}
+//	
+//	@FindBy(xpath="//div[@class='col-sm-6 bg1']//a")
+//	WebElement healthHover;
+//	
+//	public void hoverHealth() {
+//		healthHover.click();
+//	}
+	
+	@FindBy(xpath="//div[@id='1787073']")
+	WebElement self;
+	
+	public void selfTest() throws InterruptedException {
+		self.click();
+		Thread.sleep(4000);
+	}	
+	
+	@FindBy(xpath="//button[contains(text(),'Choose')]")
+	WebElement choose;
+	
+	public void chooseSelect() throws InterruptedException {
+		choose.click();
+		Thread.sleep(4000);
+	}
+	
+	public void scrollDown() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,1000)");
+	}
+	
+	
+	//@FindBy(id="ddlState")	
+	//WebElement stateId;
+		
+	
+//	@FindBy(xpath="//*[@id='ddlState']/option[10]")
+//	WebElement state;
+//	
+//	public void loop() {
+//		System.out.println("loop going to dropdown");
+//	}
+////	
+	public void selectState() throws InterruptedException {
+		WebElement div = (new WebDriverException(driver, 10))
+				.until(ExpectedConditions.visibilityOfElementLocated(By.id("ddlState")));
+		if(div.isEnabled())
+		{
+			System.out.println("DIV AVAILABLE");
+		}
+		WebElement div2 = div.findElement(By.id("divState"));
+		
+		if(div2.isEnabled())
+		{
+			System.out.println("DIV2 AVAILABLE");
+		}
+		
+//		System.out.println("ENTERED");
+//		Select select = new Select(div2.findElement(By.id("ddlState")));
+//		select.selectByVisibleText("Bihar");
+//		System.out.println("DONE");
+	}
+
+}

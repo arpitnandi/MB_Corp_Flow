@@ -1,0 +1,50 @@
+package corporate_pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Login {
+	
+	public WebDriver driver;
+	
+	public Login(WebDriver driver)
+	{
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+		
+	}
+	
+	@FindBy(xpath="//input[@id='username']")
+	WebElement username;
+	
+	public void user(String name) {
+		username.sendKeys(name);
+	}
+	
+	@FindBy(xpath="//input[@id='password']")
+	WebElement password;
+	
+	public void pswd(String pwd) {
+		password.sendKeys(pwd);
+	}
+	
+	@FindBy(xpath="//button[@id='signinBtn']")
+	WebElement signin;
+	
+//	public WebElement login() {
+//		return signin;
+//	}
+	
+	public MultipleHealth login(String uname,String psw)
+	{
+		user(uname);
+		pswd(psw);
+		signin.click();
+		return new MultipleHealth(driver);
+	}
+	
+	
+
+}
