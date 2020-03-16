@@ -50,6 +50,8 @@ public class Schneider extends Corporate_class{
 		 Thread.sleep(2000);
 		 schenAnnualHealth.selectDate();
 		 
+		 //datepicker remaining 
+		 
 		 
  
   }

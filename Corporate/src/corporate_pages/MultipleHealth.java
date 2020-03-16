@@ -16,6 +16,7 @@ public class MultipleHealth {
 	@FindBy(xpath="//div[@class='col-sm-6 bg1']//a")
 	WebElement healthHover;
 	
+	
 	public MultipleHealth(WebDriver driver)
 	{
 		this.driver = driver;

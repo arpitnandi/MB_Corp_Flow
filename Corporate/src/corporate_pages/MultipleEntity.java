@@ -51,12 +51,20 @@ public WebDriver driver;
 	@FindBy(xpath="//div[@id='2086957']")
 	WebElement selfWipro;
 	
+	@FindBy(xpath="//div[@id='4026037490']")
+	WebElement selfArcadis;
+	
 	// Choosing the Package
 	@FindBy(xpath="//button[contains(text(),'Choose')]")
 	WebElement choose;
 	
 	@FindBy(xpath="//tr[1]//td[4]//button[1]")
 	WebElement chooseWipro;
+	
+	@FindBy(xpath="//button[contains(text(),'Choose')]")
+	WebElement chooseArcadis;
+	
+	
 	
 	public void selfTest() throws InterruptedException {
 		self.click();
@@ -68,17 +76,37 @@ public WebDriver driver;
 		Thread.sleep(4000);
 	}	
 	
+	public void selfTestArcadis() {
+		selfArcadis.click();
+	}
 	
 	public void chooseSelect() throws InterruptedException {
 		choose.click();
 		Thread.sleep(4000);
-	}
-	
-	
+	}	
 	
 	public void chooseSelectWipro() throws InterruptedException {
-		choose.click();
+		chooseWipro.click();
 		Thread.sleep(4000);
+	}
+	
+	public void chooseSelectArcadis() {
+		chooseArcadis.click();
+	}
+	
+	@FindBy(xpath="/html/body/section/form/div[3]/div[8]/div[2]/div[1]/div[1]/select")
+	WebElement stateSecond;
+	
+	public void selectStateSecond() throws InterruptedException {	
+		Actions action = new Actions(driver);
+		Action act= action.moveToElement(stateSecond).build();
+		act.perform();
+		Thread.sleep(3000);
+		stateSecond.click();
+			
+			 Select select = new Select(stateSecond);
+			 select.selectByVisibleText("Karnataka");
+			
 	}
 	
 
