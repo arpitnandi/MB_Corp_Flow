@@ -17,5 +17,6 @@ public class Corporate_class {
 	public WiproWellness wWellness;
 	public SchenHealth schenHealth;
 	public SchenAnnualHealth schenAnnualHealth;
+	public ArcadisHome arcadisHome;
 
 }

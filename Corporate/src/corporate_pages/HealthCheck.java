@@ -12,6 +12,13 @@ import generic.Constants;
 public class HealthCheck {
 	
 public WebDriver driver;
+
+    public HealthCheck(WebDriver driver)
+    {
+	this.driver=driver;
+	PageFactory.initElements(driver, this);
+	}	
+    
     @FindBy(xpath="//a[text()='Health Check']")
     WebElement healthcheck;
 
@@ -39,12 +46,7 @@ public WebDriver driver;
     @FindBy(xpath="//span[contains(text(),'Continue')]")
 	WebElement cont;
 	
-	public HealthCheck(WebDriver driver)
-	{
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
-		
-	}	
+	
 	
 	public void health() {
 		healthcheck.click();
