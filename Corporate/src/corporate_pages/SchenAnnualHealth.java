@@ -34,6 +34,15 @@ public WebDriver driver;
 	@FindBy(xpath="//input[@id='txtApptDate1']")
 	WebElement date;
 	
+	@FindBy(className="xdsoft_next")
+	WebElement nextMonthArrow;
+	
+	@FindBy(css="body > div:nth-child(9) > div.xdsoft_datepicker.active > div.xdsoft_calendar > table > tbody > tr:nth-child(2) > td.xdsoft_date.xdsoft_day_of_week3.xdsoft_date.true\\,")
+	WebElement randomDate;
+	
+	@FindBy(className="xdsoft_time")
+	WebElement time;
+	
 	public void appointment() throws InterruptedException {
 	//	selfTestdrp.click();
 		Thread.sleep(2000);
@@ -59,15 +68,14 @@ public WebDriver driver;
 	public void selectDate() throws InterruptedException {
 		date.click();
 		Thread.sleep(2000);
-		date.sendKeys("03232020");
-//		List<WebElement> columns=date.findElements(By.tagName("//body/div[2]/div[1]/div[2]"));
-//
-//		for (WebElement cell: columns){
-//		   //Select 13th Date 
-//		   if (cell.getText().equals("23")){
-//		      cell.findElement(By.linkText("23")).click();
-//		      break;
-//		 }
-//	}
-	}
+		nextMonthArrow.click();
+		Thread.sleep(2000);
+		//randomDate.click();
+		//System.out.println("date done"+randomDate.getText());
+		//Thread.sleep(2000);
+		time.click();
+		
+
+}
+	
 }
