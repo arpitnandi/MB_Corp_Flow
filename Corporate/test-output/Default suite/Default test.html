@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 16 19:21:14 IST 2020</td>
+<td>Started on:</td><td>Tue Mar 17 23:00:08 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>1151 seconds (1151618 ms)</td>
+<tr><td>Total time:</td><td>118 seconds (118677 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,26 +75,22 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.Arcadis.arcadisLogin()'><b>arcadisLogin</b><br>Test class: testcases.Arcadis</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:37587
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:08.638Z&apos;
+<td title='testcases.Schneider.loginpg()'><b>loginpg</b><br>Test class: testcases.Schneider</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2696
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
 System info: host: &apos;DOC-W-SHREYAS&apos;, ip: &apos;192.168.5.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.getCoordinates(Unknown Source)
-	at org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:65)
-	at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:43)
-	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)
-	at corporate_pages.MultipleEntity.selectStateSecond(MultipleEntity.java:103)
-	at testcases.Arcadis.arcadisLogin(Arcadis.java:39)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at corporate_pages.SchenAnnualHealth.selectDate(SchenAnnualHealth.java:73)
+	at testcases.Schneider.loginpg(Schneider.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -120,12 +116,12 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:37587
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2696
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
@@ -134,15 +130,15 @@ Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
 	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
 	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	... 39 more
+	... 35 more
 Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
@@ -152,29 +148,25 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.PlainSocketImpl.connect(Unknown Source)
 	at java.net.SocksSocketImpl.connect(Unknown Source)
 	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
-	... 59 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace480490520", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace480490520'><pre>org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:37587
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:08.638Z&apos;
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	... 55 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1176968662", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1176968662'><pre>org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2696
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
 System info: host: &apos;DOC-W-SHREYAS&apos;, ip: &apos;192.168.5.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.getCoordinates(Unknown Source)
-	at org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:65)
-	at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:43)
-	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)
-	at corporate_pages.MultipleEntity.selectStateSecond(MultipleEntity.java:103)
-	at testcases.Arcadis.arcadisLogin(Arcadis.java:39)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at corporate_pages.SchenAnnualHealth.selectDate(SchenAnnualHealth.java:73)
+	at testcases.Schneider.loginpg(Schneider.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -200,12 +192,12 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:37587
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2696
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
@@ -214,15 +206,15 @@ Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
 	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
 	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	... 39 more
+	... 35 more
 Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
@@ -232,12 +224,12 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.PlainSocketImpl.connect(Unknown Source)
 	at java.net.SocksSocketImpl.connect(Unknown Source)
 	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
-	... 59 more
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	... 55 more
 </pre></div></td>
-<td>1138</td>
-<td>testcases.Arcadis@675d3402</td></tr>
+<td>107</td>
+<td>testcases.Schneider@d2cc05a</td></tr>
 </table><p>
 </body>
 </html>

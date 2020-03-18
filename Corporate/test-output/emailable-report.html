@@ -9,29 +9,25 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">1,151,618</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">118,677</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.Arcadis</td><td><a href="#m0">arcadisLogin</a></td><td rowspan="1">1584366687265</td><td rowspan="1">1138591</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.Schneider</td><td><a href="#m0">loginpg</a></td><td rowspan="1">1584466219547</td><td rowspan="1">107303</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testcases.Arcadis#arcadisLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:37587
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:08.638Z&apos;
+<h2>Default test</h2><h3 id="m0">testcases.Schneider#loginpg</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2696
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
 System info: host: &apos;DOC-W-SHREYAS&apos;, ip: &apos;192.168.5.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.getCoordinates(Unknown Source)
-	at org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:65)
-	at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:43)
-	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)
-	at corporate_pages.MultipleEntity.selectStateSecond(MultipleEntity.java:103)
-	at testcases.Arcadis.arcadisLogin(Arcadis.java:39)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at corporate_pages.SchenAnnualHealth.selectDate(SchenAnnualHealth.java:73)
+	at testcases.Schneider.loginpg(Schneider.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -57,12 +53,12 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:37587
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:2696
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
 	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
@@ -71,15 +67,15 @@ Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
 	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
 	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
 	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
 	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:101)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	... 39 more
+	... 35 more
 Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
@@ -89,9 +85,9 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.PlainSocketImpl.connect(Unknown Source)
 	at java.net.SocksSocketImpl.connect(Unknown Source)
 	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
-	... 59 more
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	... 55 more
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
