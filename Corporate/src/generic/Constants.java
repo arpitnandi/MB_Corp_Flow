@@ -12,15 +12,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Constants {
-	
-public WebDriver driver;
+public class Constants 
+{
+	public WebDriver driver;
 	
 	public Constants(WebDriver driver)
 	{
-		this.driver=driver;
 		PageFactory.initElements(driver, this);
-		
+		this.driver=driver;
 	}
 	
 	public void dismiss() {
@@ -68,6 +67,31 @@ public WebDriver driver;
 		Select sel = new Select(ddl);
 		sel.selectByVisibleText(value);
 	}
+
+	public void waitForElementToBeVisible( WebElement Element , int time ) 
+	{
+		new WebDriverWait( this.driver , time ).until( ExpectedConditions.visibilityOf( Element ));
+	}
 	
+	public void waitForElementToBeClikable( WebElement Element , int time ) 
+	{
+		new WebDriverWait( this.driver , time ).until( ExpectedConditions.elementToBeClickable( Element ));
+	}
+	
+	public void waitForElementToBeSelected( WebElement Element , int time ) 
+	{
+		new WebDriverWait( this.driver , time ).until( ExpectedConditions.elementToBeSelected( Element ));
+	}
+	
+	@SuppressWarnings("unused")
+	private void popup( String Do ) 
+	{
+		if( Do.equalsIgnoreCase("accept") )
+			this.driver.switchTo().alert().accept();
+		if( Do.contains("message") || Do.contains("text") )
+			this.driver.switchTo().alert().getText();
+		else
+			this.driver.switchTo().alert().dismiss();
+	}
 	
 }

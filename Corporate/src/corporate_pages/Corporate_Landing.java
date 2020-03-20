@@ -34,7 +34,6 @@ public class Corporate_Landing
 	{
 		this.UserName_Field.sendKeys( UN );
 		this.Password_Field.sendKeys( PW );
-		//Utils.waitForElementToBeClikable(this.Signin_Btn, 3);
 		this.Signin_Btn.click();
 	}
 	
