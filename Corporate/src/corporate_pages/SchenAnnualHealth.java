@@ -43,6 +43,8 @@ public WebDriver driver;
 	@FindBy(className="xdsoft_time")
 	WebElement time;
 	
+	//Adding LM Wind Power
+	
 	public void appointment() throws InterruptedException {
 	//	selfTestdrp.click();
 		Thread.sleep(2000);

@@ -2,6 +2,7 @@ package testcases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -22,6 +23,11 @@ public class Wipro extends Corporate_class {
 		  driver.get("https://portal.medibuddy.in/Home.aspx");
 		  driver.manage().window().maximize();
 	  }
+	  
+	  @AfterClass
+		public void quit() {
+			driver.quit();
+		}
 	   
 		
 	  @Test
@@ -39,9 +45,9 @@ public class Wipro extends Corporate_class {
 		  multiplentity = multiHealth.hoverHealth();
 		  Thread.sleep(2000);
 		  multiplentity.selfTestWipro();
-		  multiplentity.chooseSelectWipro();
-		  Thread.sleep(2000);
-		  
+//		  multiplentity.chooseSelectWipro();
+//		  Thread.sleep(2000);
+		  //last Page
 		  	
 	  }
 }

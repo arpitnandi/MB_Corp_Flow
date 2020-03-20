@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+      <class name="testcases.Analog"/>
+     <!-- <class name="testcases.Arcadis"/> -->
+      <class name="testcases.CbnI"/>
+      <class name="testcases.Hccb"/>
+      <class name="testcases.Jdtl"/>
+      <class name="testcases.LmWind"/>
+      <class name="testcases.RealPage"/>
+      <class name="testcases.Schneider"/>
+      <class name="testcases.Sopra"/>
+      <class name="testcases.Wipro"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

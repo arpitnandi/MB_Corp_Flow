@@ -2,6 +2,7 @@ package testcases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -21,6 +22,11 @@ public class Arcadis extends Corporate_class {
 		  driver.manage().window().maximize();
 	  }
 	  
+	  @AfterClass
+		public void quit() {
+			driver.quit();
+		}
+	  
      @Test
      public void arcadisLogin() throws InterruptedException {
 		 loginpage = new Login(driver);	    
@@ -35,7 +41,7 @@ public class Arcadis extends Corporate_class {
 		 multiplentity.selfTestArcadis();
 		 Thread.sleep(3000);
 		 multiplentity.chooseSelectArcadis();
-		 Thread.sleep(40000);
+//		 Thread.sleep(40000);
 		 	 
 		 				
 		 // moving on will come back to you later

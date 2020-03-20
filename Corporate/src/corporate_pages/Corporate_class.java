@@ -18,5 +18,7 @@ public class Corporate_class {
 	public SchenHealth schenHealth;
 	public SchenAnnualHealth schenAnnualHealth;
 	public ArcadisHome arcadisHome;
+	public SopraHome sopraHome;
+	public MbPage mbPage;
 
 }
