@@ -31,7 +31,7 @@ public class Hccb extends Corporate_class {
    
 	
   @Test
-  public void loginpg() throws InterruptedException {
+  public void hccb() throws InterruptedException {
 	  loginpage = new Login(driver);
 	  constant = new Constants(driver);
 	  healthcheck = new HealthCheck(driver);

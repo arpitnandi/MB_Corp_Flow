@@ -21,6 +21,9 @@ public WebDriver driver;
     
     @FindBy(xpath="//a[text()='Health Check']")
     WebElement healthcheck;
+    
+    @FindBy(xpath="//div[@id='mobilepopup']")
+    WebElement healthcheckamadeus;
 
     @FindBy(xpath="//a[contains(text(),'Book now')]")
     WebElement booknow;
@@ -52,6 +55,9 @@ public WebDriver driver;
 		healthcheck.click();
 	}	
 	
+	public void healthAmadeus() {
+		healthcheckamadeus.click();
+	}
 	public MbPage book() {
 		booknow.click();
 		return new MbPage(driver);

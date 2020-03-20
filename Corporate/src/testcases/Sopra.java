@@ -29,7 +29,7 @@ public void quit() {
 }
 
 @Test
-public void sopraLogin() throws InterruptedException {
+public void sopra() throws InterruptedException {
 	 loginpage = new Login(driver);	    
 	 loginpage.login("test101@ssi","Medi@123");
 	 

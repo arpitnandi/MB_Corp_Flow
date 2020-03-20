@@ -30,8 +30,14 @@ public class MbPage {
     @FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]")
     WebElement cityCbn;
     
+    @FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/img[1]")
+    WebElement citytransafe;
+    
     @FindBy(xpath="//div[@class='action bold mdbTxt text-right']//span[contains(text(),'View Package')]")
 	WebElement viewpkg;
+    
+    @FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/hc-card[1]/div[1]/div[2]/button[1]/span[1]")
+    WebElement viewpkgtransafe;
     
     @FindBy(xpath="//button[@class='btn btn-primary']")
 	WebElement bookapoint;
@@ -47,10 +53,27 @@ public class MbPage {
     
     @FindBy(xpath="//a[@class='btn btn-primary pull-right clearfix btn-xs']")
     WebElement selectSlotCbn;
- 
-  
+    
+    @FindBy(xpath="//a[@class='btn btn-primary pull-right clearfix btn-xs']")
+    WebElement selectSlotinvest;
+    
+    @FindBy(xpath="//*[@id=\"196932aaaaaaaaaaaaaaaaaaaaaaaaaa\"]/div[1]/div[2]/span/a")
+    WebElement selectSlotngsl;
+    
+    @FindBy(xpath="//div[@id='60659aaaaaaaaaaaaaaaaaaaaaaaaaaa']//a[@class='btn btn-primary pull-right clearfix btn-xs'][contains(text(),'Select slot')]")
+    WebElement selectSlottransafe;
+    
+    @FindBy(xpath="//div[@id='179736aaaaaaaaaaaaaaaaaaaaaaaaaa']//a[@class='btn btn-primary pull-right clearfix btn-xs'][contains(text(),'Select slot')]")
+    WebElement selectSlotlnt;
+    
+    @FindBy(xpath="//a[@class='btn btn-primary pull-right clearfix btn-xs']")
+    WebElement selectSlotsbi;
+    
     @FindBy(xpath="//label[contains(text(),'08:00 AM')]")
 	WebElement timings;
+    
+    @FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/section[1]/div[1]/div[3]/div[1]/div[1]/provider-selection[1]/div[1]/div[4]/div[2]/div[3]/div[1]/medi-book-slot[1]/div[1]/div[2]/ul[1]/li[2]/label[1]")
+    WebElement timingstransafe;
     
     
     @FindBy(xpath="//a[contains(text(),'Confirm slot')]")
@@ -58,7 +81,8 @@ public class MbPage {
     
     @FindBy(xpath="//span[contains(text(),'Continue')]")
 	WebElement cont;
-	
+    
+
 	
 	
 //	public void health() {
@@ -88,10 +112,18 @@ public class MbPage {
 		cityCbn.click();
 	}
 	
+	public void cityTransafe() {
+		citytransafe.click();
+	}
+	
 	
 	public void viewPackage() {
 		viewpkg.click();
 	}	
+	
+	public void viewPackageTransafe() {
+		viewpkgtransafe.click();
+	}
 	
 	
 	public void bookAppointment() {
@@ -114,9 +146,33 @@ public class MbPage {
 	public void slotSelectCbnI() {
 		selectSlotCbn.click();
 	}
+	
+	public void slotSelectInvestCorp() {
+		selectSlotinvest.click();
+	}
+	
+	public void slotSelectNgsl() {
+		selectSlotngsl.click();
+	}
+	
+	public void slotSelectTransafe() {
+		selectSlottransafe.click();
+	}
+	
+	public void slotSelectSbi() {
+		selectSlotsbi.click();
+	}
+	
+	public void slotSelectLnt() {
+		selectSlotlnt.click();
+	}
 		
 	public void selectTime() {
 		timings.click();
+	}
+	
+	public void selectTimeTransafe() {
+		timingstransafe.click();
 	}
 		
 	public void slotConfirm() {

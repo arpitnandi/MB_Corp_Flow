@@ -1,0 +1,53 @@
+package testcases;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import corporate_pages.Corporate_class;
+import corporate_pages.Login;
+import corporate_pages.MbPage;
+import corporate_pages.MultipleHealth;
+
+public class CbnI extends Corporate_class {
+	WebDriver driver;
+
+	@BeforeClass
+		public void browser() {
+		  System.setProperty("webdriver.chrome.driver", "C:\\chrome extension\\chromedriver.exe");
+		  driver=new ChromeDriver();
+		  driver.get("https://portal.medibuddy.in/Home.aspx");
+		  driver.manage().window().maximize();
+	}
+	
+	@AfterClass
+	public void quit() {
+		driver.quit();
+	}
+
+	@Test
+	public void analog() throws InterruptedException {
+		 loginpage = new Login(driver);	    
+		 loginpage.login("CB01@CBI","03-12-1989");  
+		 multiHealth = new MultipleHealth(driver);
+		 multiHealth.pop();
+		 multiHealth.hoverHealth();
+		 Thread.sleep(20000);
+		 mbPage = new MbPage(driver);
+		 mbPage.cityCbnI();
+		 Thread.sleep(5000);
+		 mbPage.viewPackage();
+		 Thread.sleep(2000);
+		 mbPage.bookAppointment();
+		 Thread.sleep(3000);
+		 mbPage.slotSelectCbnI();
+		 mbPage.selectTime();
+		 Thread.sleep(2000);
+		 mbPage.slotConfirm();
+		 Thread.sleep(6000);
+		 mbPage.continueNext();
+	
+	}		
+}
