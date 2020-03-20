@@ -52,8 +52,9 @@ public WebDriver driver;
 		healthcheck.click();
 	}	
 	
-	public void book() {
+	public MbPage book() {
 		booknow.click();
+		return new MbPage(driver);
 	}
 	
 	

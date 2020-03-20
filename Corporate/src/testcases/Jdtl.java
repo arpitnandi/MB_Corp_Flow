@@ -27,6 +27,11 @@ public class Jdtl extends Corporate_class {
 	  driver.get("https://portal.medibuddy.in/Home.aspx");
 	  driver.manage().window().maximize();
 	  }
+  
+  @AfterClass
+	public void quit() {
+		driver.quit();
+	}
 	
 	
   @Test
@@ -76,8 +81,5 @@ public class Jdtl extends Corporate_class {
 		  
   }
   
-  @AfterClass
-  public void exit() {
-	  driver.quit();
-  }
+ 
 }

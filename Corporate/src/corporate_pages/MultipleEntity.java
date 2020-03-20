@@ -45,6 +45,9 @@ public WebDriver driver;
 	
 	
 	// Selecting self Test
+	@FindBy(id="2446709")
+	WebElement selfSopra;
+	
 	@FindBy(xpath="//div[@id='1787073']")
 	WebElement self;
 	
@@ -53,6 +56,7 @@ public WebDriver driver;
 	
 	@FindBy(xpath="//div[@id='4026037490']")
 	WebElement selfArcadis;
+	
 	
 	// Choosing the Package
 	@FindBy(xpath="//button[contains(text(),'Choose')]")
@@ -63,6 +67,9 @@ public WebDriver driver;
 	
 	@FindBy(xpath="//button[contains(text(),'Choose')]")
 	WebElement chooseArcadis;
+	
+	@FindBy(xpath="//button[contains(text(),'Choose')]")
+	WebElement chooseSopra;
 	
 	
 	
@@ -80,6 +87,10 @@ public WebDriver driver;
 		selfArcadis.click();
 	}
 	
+	public void selfTestSopra() {
+		selfSopra.click();
+	}
+	
 	public void chooseSelect() throws InterruptedException {
 		choose.click();
 		Thread.sleep(4000);
@@ -92,6 +103,10 @@ public WebDriver driver;
 	
 	public void chooseSelectArcadis() {
 		chooseArcadis.click();
+	}
+	
+	public void chooseSelectSopra() {
+		chooseSopra.click();
 	}
 	
 	@FindBy(xpath="/html/body/section/form/div[3]/div[8]/div[2]/div[1]/div[1]/select")

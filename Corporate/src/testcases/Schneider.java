@@ -2,6 +2,7 @@ package testcases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -21,6 +22,11 @@ public class Schneider extends Corporate_class{
 		  driver.get("https://portal.medibuddy.in/Home.aspx");
 		  driver.manage().window().maximize();
 	  }
+	  
+	  @AfterClass
+		public void quit() {
+			driver.quit();
+		}
 	   
 		
 	  @Test
