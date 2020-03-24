@@ -28,7 +28,7 @@ public class Arcadis extends Corporate_class {
 		}
 	  
      @Test
-     public void arcadis() throws InterruptedException {
+     public void arcadisLogin() throws InterruptedException {
 		 loginpage = new Login(driver);	    
 		 loginpage.login("test1@arcadis","01-01-1992");
 		 arcadisHome = new ArcadisHome(driver);

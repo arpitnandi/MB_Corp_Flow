@@ -31,7 +31,7 @@ public class Wipro extends Corporate_class {
 	   
 		
 	  @Test
-	  public void wipro() throws InterruptedException {
+	  public void loginpg() throws InterruptedException {
 		  loginpage = new Login(driver);
 		  		  
 		  loginpage.login("TestF@wipro","Medi@123");

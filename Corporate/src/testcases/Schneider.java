@@ -30,7 +30,7 @@ public class Schneider extends Corporate_class{
 	   
 		
 	  @Test
-	  public void schneider() throws InterruptedException {
+	  public void loginpg() throws InterruptedException {
 		 loginpage = new Login(driver);	    
 		  
 		 loginpage.login("test101@Schneider","28-02-1967");

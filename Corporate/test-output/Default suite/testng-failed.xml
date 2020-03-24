@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.Adobe">
+      <class name="testcases.RealPage">
         <methods>
-          <include name="adobe"/>
+          <include name="analog"/>
           <include name="browser"/>
         </methods>
-      </class> <!-- testcases.Adobe -->
+      </class> <!-- testcases.RealPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -28,7 +28,7 @@ public class CbnI extends Corporate_class {
 	}
 
 	@Test
-	public void cbnI() throws InterruptedException {
+	public void analog() throws InterruptedException {
 		 loginpage = new Login(driver);	    
 		 loginpage.login("CB01@CBI","03-12-1989");  
 		 multiHealth = new MultipleHealth(driver);

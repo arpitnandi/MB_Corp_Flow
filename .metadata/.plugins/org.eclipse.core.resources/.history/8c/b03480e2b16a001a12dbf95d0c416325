@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+      <class name="testcases.Analog"/>
+      <class name="testcases.Amadeus"/>
+      <class name="testcases.CbnI"/>
+      <class name="testcases.Hccb"/>
+      <class name="testcases.SbI"/>
+      <class name="testcases.Transafe"/>
+      <class name="testcases.RealPage"/>
+      <class name="testcases.Monsanto"/>
+      <class name="testcases.Ngsl"/>
+      <class name="testcases.Adobe"/>
+      <class name="testcases.InvestCorp"/>
+      <class name="testcases.Lnt"/>
+      <class name="testcases.Adobe"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

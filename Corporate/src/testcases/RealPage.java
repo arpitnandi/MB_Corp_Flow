@@ -30,7 +30,7 @@ public class RealPage extends Corporate_class {
 	}
 
 	@Test
-	public void realImage() throws InterruptedException {
+	public void analog() throws InterruptedException {
 		 loginpage = new Login(driver);	    
 		 loginpage.login("Test123@realpage","01-01-1984");
 		 

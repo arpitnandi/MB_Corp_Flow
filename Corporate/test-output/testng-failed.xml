@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testcases.Adobe">
+      <class name="testcases.Arcadis">
         <methods>
-          <include name="adobe"/>
+          <include name="arcadisLogin"/>
+          <include name="quit"/>
           <include name="browser"/>
         </methods>
-      </class> <!-- testcases.Adobe -->
+      </class> <!-- testcases.Arcadis -->
+      <class name="testcases.Schneider">
+        <methods>
+          <include name="quit"/>
+          <include name="loginpg"/>
+          <include name="browser"/>
+        </methods>
+      </class> <!-- testcases.Schneider -->
+      <class name="testcases.Wipro">
+        <methods>
+          <include name="loginpg"/>
+          <include name="browser"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- testcases.Wipro -->
+      <class name="testcases.Jdtl">
+        <methods>
+          <include name="jdtlCorp"/>
+          <include name="quit"/>
+          <include name="browser"/>
+        </methods>
+      </class> <!-- testcases.Jdtl -->
+      <class name="testcases.Sopra">
+        <methods>
+          <include name="browser"/>
+          <include name="quit"/>
+          <include name="sopraLogin"/>
+        </methods>
+      </class> <!-- testcases.Sopra -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
