@@ -822,3 +822,227 @@ org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpComponents connect
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 !SUBENTRY 1 org.eclipse.ecf.identity 4 0 2020-03-24 14:38:58.263
 !MESSAGE HttpComponents connection error response code 410.
+!SESSION 2020-03-24 14:45:41.350 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data file:/D:/MediCorp/mb_corp_flow/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-03-24 14:45:53.078
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DocsApp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-03-24 14:45:56.853
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2020-03-24 15:14:31.737
+!MESSAGE HTTP Remote File Permanently Removed: http://beust.com/eclipse/compositeContent.xml
+!STACK 1
+org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpComponents connection error response code 410.
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:293)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2020-03-24 15:14:31.739
+!MESSAGE HttpComponents connection error response code 410.
+!SESSION 2020-03-24 16:05:44.086 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-03-24 16:09:35.667
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DocsApp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-03-24 16:09:44.486
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: Read timed out. ; version: 2.0.7.v20170906-1327
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: Read timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:170)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:64)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.security.ssl.InputRecord.readFully(Unknown Source)
+	at sun.security.ssl.InputRecord.read(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:394)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 17 more
+!SESSION 2020-03-25 19:15:22.364 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-03-25 19:15:57.855
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DocsApp'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-03-25 19:16:02.329
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.jface.text 2 0 2020-03-25 19:21:26.060
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-03-25 19:21:26.070
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-03-25 19:22:53.778
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-03-25 19:22:53.788
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-25 19:22:55.182
+!MESSAGE Failed to download org.eclipse.recommenders:index::zip:0.0.0
+!STACK 0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/oxygen/)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:453)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:255)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:232)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:303)
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:193)
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:168)
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/oxygen/)
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:48)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:364)
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:76)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:590)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:258)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:529)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:430)
+	... 8 more
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-03-25 19:22:55.211
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.testng.eclipse 1 0 2020-03-25 19:27:54.429
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\DocsApp\eclipse\jee-oxygen\eclipse\configuration\org.eclipse.osgi\1018\0\.cp\lib\testng-remote.jar C:\Program Files\java8\lib\resources.jar C:\Program Files\java8\lib\rt.jar C:\Program Files\java8\lib\jsse.jar C:\Program Files\java8\lib\jce.jar C:\Program Files\java8\lib\charsets.jar C:\Program Files\java8\lib\jfr.jar C:\Program Files\java8\lib\ext\access-bridge-64.jar C:\Program Files\java8\lib\ext\cldrdata.jar C:\Program Files\java8\lib\ext\dnsns.jar C:\Program Files\java8\lib\ext\jaccess.jar C:\Program Files\java8\lib\ext\jfxrt.jar C:\Program Files\java8\lib\ext\localedata.jar C:\Program Files\java8\lib\ext\nashorn.jar C:\Program Files\java8\lib\ext\sunec.jar C:\Program Files\java8\lib\ext\sunjce_provider.jar C:\Program Files\java8\lib\ext\sunmscapi.jar C:\Program Files\java8\lib\ext\sunpkcs11.jar C:\Program Files\java8\lib\ext\zipfs.jar D:\MediCorp\mb_corp_flow\Corporate\bin C:\Users\DocsApp\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\DocsApp\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\DocsApp\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\DocsApp\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar D:\MediCorp\mb_corp_flow\Corporate\lib\byte-buddy-1.8.15.jar D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59-sources.jar D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59.jar D:\MediCorp\mb_corp_flow\Corporate\lib\commons-exec-1.3.jar D:\MediCorp\mb_corp_flow\Corporate\lib\guava-25.0-jre.jar D:\MediCorp\mb_corp_flow\Corporate\lib\okhttp-3.11.0.jar D:\MediCorp\mb_corp_flow\Corporate\lib\okio-1.14.0.jar C:\Users\DocsApp\Downloads\log4j-1.2.17\apache-log4j-1.2.17\log4j-1.2.17.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58519 -protocol json -d D:\MediCorp\mb_corp_flow\Corporate\test-output D:\MediCorp\mb_corp_flow\Corporate\src\suiteRun.xml
+java -ea -classpath C:\Users\DocsApp\eclipse\jee-oxygen\eclipse\configuration\org.eclipse.osgi\1018\0\.cp\lib\testng-remote.jar:C:\Program Files\java8\lib\resources.jar:C:\Program Files\java8\lib\rt.jar:C:\Program Files\java8\lib\jsse.jar:C:\Program Files\java8\lib\jce.jar:C:\Program Files\java8\lib\charsets.jar:C:\Program Files\java8\lib\jfr.jar:C:\Program Files\java8\lib\ext\access-bridge-64.jar:C:\Program Files\java8\lib\ext\cldrdata.jar:C:\Program Files\java8\lib\ext\dnsns.jar:C:\Program Files\java8\lib\ext\jaccess.jar:C:\Program Files\java8\lib\ext\jfxrt.jar:C:\Program Files\java8\lib\ext\localedata.jar:C:\Program Files\java8\lib\ext\nashorn.jar:C:\Program Files\java8\lib\ext\sunec.jar:C:\Program Files\java8\lib\ext\sunjce_provider.jar:C:\Program Files\java8\lib\ext\sunmscapi.jar:C:\Program Files\java8\lib\ext\sunpkcs11.jar:C:\Program Files\java8\lib\ext\zipfs.jar:D:\MediCorp\mb_corp_flow\Corporate\bin:C:\Users\DocsApp\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\DocsApp\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\DocsApp\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\DocsApp\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\byte-buddy-1.8.15.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59-sources.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\commons-exec-1.3.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\guava-25.0-jre.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\okhttp-3.11.0.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\okio-1.14.0.jar:C:\Users\DocsApp\Downloads\log4j-1.2.17\apache-log4j-1.2.17\log4j-1.2.17.jar org.testng.remote.RemoteTestNG -serport 58519 -protocol json -d D:\MediCorp\mb_corp_flow\Corporate\test-output D:\MediCorp\mb_corp_flow\Corporate\src\suiteRun.xml
+
+!ENTRY org.testng.eclipse 1 0 2020-03-25 19:34:42.207
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\DocsApp\eclipse\jee-oxygen\eclipse\configuration\org.eclipse.osgi\1018\0\.cp\lib\testng-remote.jar C:\Program Files\java8\lib\resources.jar C:\Program Files\java8\lib\rt.jar C:\Program Files\java8\lib\jsse.jar C:\Program Files\java8\lib\jce.jar C:\Program Files\java8\lib\charsets.jar C:\Program Files\java8\lib\jfr.jar C:\Program Files\java8\lib\ext\access-bridge-64.jar C:\Program Files\java8\lib\ext\cldrdata.jar C:\Program Files\java8\lib\ext\dnsns.jar C:\Program Files\java8\lib\ext\jaccess.jar C:\Program Files\java8\lib\ext\jfxrt.jar C:\Program Files\java8\lib\ext\localedata.jar C:\Program Files\java8\lib\ext\nashorn.jar C:\Program Files\java8\lib\ext\sunec.jar C:\Program Files\java8\lib\ext\sunjce_provider.jar C:\Program Files\java8\lib\ext\sunmscapi.jar C:\Program Files\java8\lib\ext\sunpkcs11.jar C:\Program Files\java8\lib\ext\zipfs.jar D:\MediCorp\mb_corp_flow\Corporate\bin C:\Users\DocsApp\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\DocsApp\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\DocsApp\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\DocsApp\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar D:\MediCorp\mb_corp_flow\Corporate\lib\byte-buddy-1.8.15.jar D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59-sources.jar D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59.jar D:\MediCorp\mb_corp_flow\Corporate\lib\commons-exec-1.3.jar D:\MediCorp\mb_corp_flow\Corporate\lib\guava-25.0-jre.jar D:\MediCorp\mb_corp_flow\Corporate\lib\okhttp-3.11.0.jar D:\MediCorp\mb_corp_flow\Corporate\lib\okio-1.14.0.jar C:\Users\DocsApp\Downloads\log4j-1.2.17\apache-log4j-1.2.17\log4j-1.2.17.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58625 -protocol json -d D:\MediCorp\mb_corp_flow\Corporate\test-output D:\MediCorp\mb_corp_flow\Corporate\src\suiteRun.xml
+java -ea -classpath C:\Users\DocsApp\eclipse\jee-oxygen\eclipse\configuration\org.eclipse.osgi\1018\0\.cp\lib\testng-remote.jar:C:\Program Files\java8\lib\resources.jar:C:\Program Files\java8\lib\rt.jar:C:\Program Files\java8\lib\jsse.jar:C:\Program Files\java8\lib\jce.jar:C:\Program Files\java8\lib\charsets.jar:C:\Program Files\java8\lib\jfr.jar:C:\Program Files\java8\lib\ext\access-bridge-64.jar:C:\Program Files\java8\lib\ext\cldrdata.jar:C:\Program Files\java8\lib\ext\dnsns.jar:C:\Program Files\java8\lib\ext\jaccess.jar:C:\Program Files\java8\lib\ext\jfxrt.jar:C:\Program Files\java8\lib\ext\localedata.jar:C:\Program Files\java8\lib\ext\nashorn.jar:C:\Program Files\java8\lib\ext\sunec.jar:C:\Program Files\java8\lib\ext\sunjce_provider.jar:C:\Program Files\java8\lib\ext\sunmscapi.jar:C:\Program Files\java8\lib\ext\sunpkcs11.jar:C:\Program Files\java8\lib\ext\zipfs.jar:D:\MediCorp\mb_corp_flow\Corporate\bin:C:\Users\DocsApp\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\DocsApp\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\DocsApp\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\DocsApp\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\byte-buddy-1.8.15.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59-sources.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\commons-exec-1.3.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\guava-25.0-jre.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\okhttp-3.11.0.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\okio-1.14.0.jar:C:\Users\DocsApp\Downloads\log4j-1.2.17\apache-log4j-1.2.17\log4j-1.2.17.jar org.testng.remote.RemoteTestNG -serport 58625 -protocol json -d D:\MediCorp\mb_corp_flow\Corporate\test-output D:\MediCorp\mb_corp_flow\Corporate\src\suiteRun.xml
+
+!ENTRY org.testng.eclipse 1 0 2020-03-25 19:37:05.355
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\DocsApp\eclipse\jee-oxygen\eclipse\configuration\org.eclipse.osgi\1018\0\.cp\lib\testng-remote.jar C:\Program Files\java8\lib\resources.jar C:\Program Files\java8\lib\rt.jar C:\Program Files\java8\lib\jsse.jar C:\Program Files\java8\lib\jce.jar C:\Program Files\java8\lib\charsets.jar C:\Program Files\java8\lib\jfr.jar C:\Program Files\java8\lib\ext\access-bridge-64.jar C:\Program Files\java8\lib\ext\cldrdata.jar C:\Program Files\java8\lib\ext\dnsns.jar C:\Program Files\java8\lib\ext\jaccess.jar C:\Program Files\java8\lib\ext\jfxrt.jar C:\Program Files\java8\lib\ext\localedata.jar C:\Program Files\java8\lib\ext\nashorn.jar C:\Program Files\java8\lib\ext\sunec.jar C:\Program Files\java8\lib\ext\sunjce_provider.jar C:\Program Files\java8\lib\ext\sunmscapi.jar C:\Program Files\java8\lib\ext\sunpkcs11.jar C:\Program Files\java8\lib\ext\zipfs.jar D:\MediCorp\mb_corp_flow\Corporate\bin C:\Users\DocsApp\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\DocsApp\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\DocsApp\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\DocsApp\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar D:\MediCorp\mb_corp_flow\Corporate\lib\byte-buddy-1.8.15.jar D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59-sources.jar D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59.jar D:\MediCorp\mb_corp_flow\Corporate\lib\commons-exec-1.3.jar D:\MediCorp\mb_corp_flow\Corporate\lib\guava-25.0-jre.jar D:\MediCorp\mb_corp_flow\Corporate\lib\okhttp-3.11.0.jar D:\MediCorp\mb_corp_flow\Corporate\lib\okio-1.14.0.jar C:\Users\DocsApp\Downloads\log4j-1.2.17\apache-log4j-1.2.17\log4j-1.2.17.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58718 -protocol json -d D:\MediCorp\mb_corp_flow\Corporate\test-output D:\MediCorp\mb_corp_flow\Corporate\src\suiteRun.xml
+java -ea -classpath C:\Users\DocsApp\eclipse\jee-oxygen\eclipse\configuration\org.eclipse.osgi\1018\0\.cp\lib\testng-remote.jar:C:\Program Files\java8\lib\resources.jar:C:\Program Files\java8\lib\rt.jar:C:\Program Files\java8\lib\jsse.jar:C:\Program Files\java8\lib\jce.jar:C:\Program Files\java8\lib\charsets.jar:C:\Program Files\java8\lib\jfr.jar:C:\Program Files\java8\lib\ext\access-bridge-64.jar:C:\Program Files\java8\lib\ext\cldrdata.jar:C:\Program Files\java8\lib\ext\dnsns.jar:C:\Program Files\java8\lib\ext\jaccess.jar:C:\Program Files\java8\lib\ext\jfxrt.jar:C:\Program Files\java8\lib\ext\localedata.jar:C:\Program Files\java8\lib\ext\nashorn.jar:C:\Program Files\java8\lib\ext\sunec.jar:C:\Program Files\java8\lib\ext\sunjce_provider.jar:C:\Program Files\java8\lib\ext\sunmscapi.jar:C:\Program Files\java8\lib\ext\sunpkcs11.jar:C:\Program Files\java8\lib\ext\zipfs.jar:D:\MediCorp\mb_corp_flow\Corporate\bin:C:\Users\DocsApp\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\DocsApp\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\DocsApp\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\DocsApp\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\byte-buddy-1.8.15.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59-sources.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\commons-exec-1.3.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\guava-25.0-jre.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\okhttp-3.11.0.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\okio-1.14.0.jar:C:\Users\DocsApp\Downloads\log4j-1.2.17\apache-log4j-1.2.17\log4j-1.2.17.jar org.testng.remote.RemoteTestNG -serport 58718 -protocol json -d D:\MediCorp\mb_corp_flow\Corporate\test-output D:\MediCorp\mb_corp_flow\Corporate\src\suiteRun.xml
+
+!ENTRY org.testng.eclipse 1 0 2020-03-25 19:46:05.638
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\DocsApp\eclipse\jee-oxygen\eclipse\configuration\org.eclipse.osgi\1018\0\.cp\lib\testng-remote.jar C:\Program Files\java8\lib\resources.jar C:\Program Files\java8\lib\rt.jar C:\Program Files\java8\lib\jsse.jar C:\Program Files\java8\lib\jce.jar C:\Program Files\java8\lib\charsets.jar C:\Program Files\java8\lib\jfr.jar C:\Program Files\java8\lib\ext\access-bridge-64.jar C:\Program Files\java8\lib\ext\cldrdata.jar C:\Program Files\java8\lib\ext\dnsns.jar C:\Program Files\java8\lib\ext\jaccess.jar C:\Program Files\java8\lib\ext\jfxrt.jar C:\Program Files\java8\lib\ext\localedata.jar C:\Program Files\java8\lib\ext\nashorn.jar C:\Program Files\java8\lib\ext\sunec.jar C:\Program Files\java8\lib\ext\sunjce_provider.jar C:\Program Files\java8\lib\ext\sunmscapi.jar C:\Program Files\java8\lib\ext\sunpkcs11.jar C:\Program Files\java8\lib\ext\zipfs.jar D:\MediCorp\mb_corp_flow\Corporate\bin C:\Users\DocsApp\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\DocsApp\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\DocsApp\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\DocsApp\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar D:\MediCorp\mb_corp_flow\Corporate\lib\byte-buddy-1.8.15.jar D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59-sources.jar D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59.jar D:\MediCorp\mb_corp_flow\Corporate\lib\commons-exec-1.3.jar D:\MediCorp\mb_corp_flow\Corporate\lib\guava-25.0-jre.jar D:\MediCorp\mb_corp_flow\Corporate\lib\okhttp-3.11.0.jar D:\MediCorp\mb_corp_flow\Corporate\lib\okio-1.14.0.jar C:\Users\DocsApp\Downloads\log4j-1.2.17\apache-log4j-1.2.17\log4j-1.2.17.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58854 -protocol json -d D:\MediCorp\mb_corp_flow\Corporate\test-output D:\MediCorp\mb_corp_flow\Corporate\src\suiteRun.xml
+java -ea -classpath C:\Users\DocsApp\eclipse\jee-oxygen\eclipse\configuration\org.eclipse.osgi\1018\0\.cp\lib\testng-remote.jar:C:\Program Files\java8\lib\resources.jar:C:\Program Files\java8\lib\rt.jar:C:\Program Files\java8\lib\jsse.jar:C:\Program Files\java8\lib\jce.jar:C:\Program Files\java8\lib\charsets.jar:C:\Program Files\java8\lib\jfr.jar:C:\Program Files\java8\lib\ext\access-bridge-64.jar:C:\Program Files\java8\lib\ext\cldrdata.jar:C:\Program Files\java8\lib\ext\dnsns.jar:C:\Program Files\java8\lib\ext\jaccess.jar:C:\Program Files\java8\lib\ext\jfxrt.jar:C:\Program Files\java8\lib\ext\localedata.jar:C:\Program Files\java8\lib\ext\nashorn.jar:C:\Program Files\java8\lib\ext\sunec.jar:C:\Program Files\java8\lib\ext\sunjce_provider.jar:C:\Program Files\java8\lib\ext\sunmscapi.jar:C:\Program Files\java8\lib\ext\sunpkcs11.jar:C:\Program Files\java8\lib\ext\zipfs.jar:D:\MediCorp\mb_corp_flow\Corporate\bin:C:\Users\DocsApp\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\DocsApp\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\DocsApp\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\DocsApp\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\byte-buddy-1.8.15.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59-sources.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\commons-exec-1.3.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\guava-25.0-jre.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\okhttp-3.11.0.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\okio-1.14.0.jar:C:\Users\DocsApp\Downloads\log4j-1.2.17\apache-log4j-1.2.17\log4j-1.2.17.jar org.testng.remote.RemoteTestNG -serport 58854 -protocol json -d D:\MediCorp\mb_corp_flow\Corporate\test-output D:\MediCorp\mb_corp_flow\Corporate\src\suiteRun.xml
+
+!ENTRY org.testng.eclipse 1 0 2020-03-25 19:53:28.383
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\DocsApp\eclipse\jee-oxygen\eclipse\configuration\org.eclipse.osgi\1018\0\.cp\lib\testng-remote.jar C:\Program Files\java8\lib\resources.jar C:\Program Files\java8\lib\rt.jar C:\Program Files\java8\lib\jsse.jar C:\Program Files\java8\lib\jce.jar C:\Program Files\java8\lib\charsets.jar C:\Program Files\java8\lib\jfr.jar C:\Program Files\java8\lib\ext\access-bridge-64.jar C:\Program Files\java8\lib\ext\cldrdata.jar C:\Program Files\java8\lib\ext\dnsns.jar C:\Program Files\java8\lib\ext\jaccess.jar C:\Program Files\java8\lib\ext\jfxrt.jar C:\Program Files\java8\lib\ext\localedata.jar C:\Program Files\java8\lib\ext\nashorn.jar C:\Program Files\java8\lib\ext\sunec.jar C:\Program Files\java8\lib\ext\sunjce_provider.jar C:\Program Files\java8\lib\ext\sunmscapi.jar C:\Program Files\java8\lib\ext\sunpkcs11.jar C:\Program Files\java8\lib\ext\zipfs.jar D:\MediCorp\mb_corp_flow\Corporate\bin C:\Users\DocsApp\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\DocsApp\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\DocsApp\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\DocsApp\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar D:\MediCorp\mb_corp_flow\Corporate\lib\byte-buddy-1.8.15.jar D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59-sources.jar D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59.jar D:\MediCorp\mb_corp_flow\Corporate\lib\commons-exec-1.3.jar D:\MediCorp\mb_corp_flow\Corporate\lib\guava-25.0-jre.jar D:\MediCorp\mb_corp_flow\Corporate\lib\okhttp-3.11.0.jar D:\MediCorp\mb_corp_flow\Corporate\lib\okio-1.14.0.jar C:\Users\DocsApp\Downloads\log4j-1.2.17\apache-log4j-1.2.17\log4j-1.2.17.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59080 -protocol json -d D:\MediCorp\mb_corp_flow\Corporate\test-output D:\MediCorp\mb_corp_flow\Corporate\src\suiteRun.xml
+java -ea -classpath C:\Users\DocsApp\eclipse\jee-oxygen\eclipse\configuration\org.eclipse.osgi\1018\0\.cp\lib\testng-remote.jar:C:\Program Files\java8\lib\resources.jar:C:\Program Files\java8\lib\rt.jar:C:\Program Files\java8\lib\jsse.jar:C:\Program Files\java8\lib\jce.jar:C:\Program Files\java8\lib\charsets.jar:C:\Program Files\java8\lib\jfr.jar:C:\Program Files\java8\lib\ext\access-bridge-64.jar:C:\Program Files\java8\lib\ext\cldrdata.jar:C:\Program Files\java8\lib\ext\dnsns.jar:C:\Program Files\java8\lib\ext\jaccess.jar:C:\Program Files\java8\lib\ext\jfxrt.jar:C:\Program Files\java8\lib\ext\localedata.jar:C:\Program Files\java8\lib\ext\nashorn.jar:C:\Program Files\java8\lib\ext\sunec.jar:C:\Program Files\java8\lib\ext\sunjce_provider.jar:C:\Program Files\java8\lib\ext\sunmscapi.jar:C:\Program Files\java8\lib\ext\sunpkcs11.jar:C:\Program Files\java8\lib\ext\zipfs.jar:D:\MediCorp\mb_corp_flow\Corporate\bin:C:\Users\DocsApp\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\DocsApp\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\DocsApp\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\DocsApp\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\byte-buddy-1.8.15.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59-sources.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\commons-exec-1.3.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\guava-25.0-jre.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\okhttp-3.11.0.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\okio-1.14.0.jar:C:\Users\DocsApp\Downloads\log4j-1.2.17\apache-log4j-1.2.17\log4j-1.2.17.jar org.testng.remote.RemoteTestNG -serport 59080 -protocol json -d D:\MediCorp\mb_corp_flow\Corporate\test-output D:\MediCorp\mb_corp_flow\Corporate\src\suiteRun.xml
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2020-03-25 19:55:45.513
+!MESSAGE HTTP Remote File Permanently Removed: http://beust.com/eclipse/compositeContent.xml
+!STACK 1
+org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpComponents connection error response code 410.
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:293)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2020-03-25 19:55:45.515
+!MESSAGE HttpComponents connection error response code 410.
+
+!ENTRY org.testng.eclipse 1 0 2020-03-25 19:56:26.025
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\DocsApp\eclipse\jee-oxygen\eclipse\configuration\org.eclipse.osgi\1018\0\.cp\lib\testng-remote.jar C:\Program Files\java8\lib\resources.jar C:\Program Files\java8\lib\rt.jar C:\Program Files\java8\lib\jsse.jar C:\Program Files\java8\lib\jce.jar C:\Program Files\java8\lib\charsets.jar C:\Program Files\java8\lib\jfr.jar C:\Program Files\java8\lib\ext\access-bridge-64.jar C:\Program Files\java8\lib\ext\cldrdata.jar C:\Program Files\java8\lib\ext\dnsns.jar C:\Program Files\java8\lib\ext\jaccess.jar C:\Program Files\java8\lib\ext\jfxrt.jar C:\Program Files\java8\lib\ext\localedata.jar C:\Program Files\java8\lib\ext\nashorn.jar C:\Program Files\java8\lib\ext\sunec.jar C:\Program Files\java8\lib\ext\sunjce_provider.jar C:\Program Files\java8\lib\ext\sunmscapi.jar C:\Program Files\java8\lib\ext\sunpkcs11.jar C:\Program Files\java8\lib\ext\zipfs.jar D:\MediCorp\mb_corp_flow\Corporate\bin C:\Users\DocsApp\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar C:\Users\DocsApp\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar C:\Users\DocsApp\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar C:\Users\DocsApp\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar D:\MediCorp\mb_corp_flow\Corporate\lib\byte-buddy-1.8.15.jar D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59-sources.jar D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59.jar D:\MediCorp\mb_corp_flow\Corporate\lib\commons-exec-1.3.jar D:\MediCorp\mb_corp_flow\Corporate\lib\guava-25.0-jre.jar D:\MediCorp\mb_corp_flow\Corporate\lib\okhttp-3.11.0.jar D:\MediCorp\mb_corp_flow\Corporate\lib\okio-1.14.0.jar C:\Users\DocsApp\Downloads\log4j-1.2.17\apache-log4j-1.2.17\log4j-1.2.17.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59294 -protocol json -d D:\MediCorp\mb_corp_flow\Corporate\test-output D:\MediCorp\mb_corp_flow\Corporate\src\suiteRun.xml
+java -ea -classpath C:\Users\DocsApp\eclipse\jee-oxygen\eclipse\configuration\org.eclipse.osgi\1018\0\.cp\lib\testng-remote.jar:C:\Program Files\java8\lib\resources.jar:C:\Program Files\java8\lib\rt.jar:C:\Program Files\java8\lib\jsse.jar:C:\Program Files\java8\lib\jce.jar:C:\Program Files\java8\lib\charsets.jar:C:\Program Files\java8\lib\jfr.jar:C:\Program Files\java8\lib\ext\access-bridge-64.jar:C:\Program Files\java8\lib\ext\cldrdata.jar:C:\Program Files\java8\lib\ext\dnsns.jar:C:\Program Files\java8\lib\ext\jaccess.jar:C:\Program Files\java8\lib\ext\jfxrt.jar:C:\Program Files\java8\lib\ext\localedata.jar:C:\Program Files\java8\lib\ext\nashorn.jar:C:\Program Files\java8\lib\ext\sunec.jar:C:\Program Files\java8\lib\ext\sunjce_provider.jar:C:\Program Files\java8\lib\ext\sunmscapi.jar:C:\Program Files\java8\lib\ext\sunpkcs11.jar:C:\Program Files\java8\lib\ext\zipfs.jar:D:\MediCorp\mb_corp_flow\Corporate\bin:C:\Users\DocsApp\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\DocsApp\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\DocsApp\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\DocsApp\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\byte-buddy-1.8.15.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59-sources.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\client-combined-3.141.59.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\commons-exec-1.3.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\guava-25.0-jre.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\okhttp-3.11.0.jar:D:\MediCorp\mb_corp_flow\Corporate\lib\okio-1.14.0.jar:C:\Users\DocsApp\Downloads\log4j-1.2.17\apache-log4j-1.2.17\log4j-1.2.17.jar org.testng.remote.RemoteTestNG -serport 59294 -protocol json -d D:\MediCorp\mb_corp_flow\Corporate\test-output D:\MediCorp\mb_corp_flow\Corporate\src\suiteRun.xml
