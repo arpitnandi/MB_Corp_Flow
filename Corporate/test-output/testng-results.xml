@@ -20,19 +20,19 @@
       <![CDATA[<br> Time slected and confirmed]]>
     </line>
     <line>
-      <![CDATA[<br> Continued to last page]]>
+      <![CDATA[<br> Contined to last page]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="66257" started-at="2020-03-26T11:19:27Z" finished-at="2020-03-26T11:20:33Z">
+  <suite name="Default suite" duration-ms="70224" started-at="2020-03-26T13:35:24Z" finished-at="2020-03-26T13:36:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="66257" started-at="2020-03-26T11:19:27Z" finished-at="2020-03-26T11:20:33Z">
-      <class name="testcases.Spic">
-        <test-method status="PASS" signature="browser()[pri:0, instance:testcases.Spic@7c16905e]" name="browser" is-config="true" duration-ms="12889" started-at="2020-03-26T11:19:27Z" finished-at="2020-03-26T11:19:40Z">
+    <test name="Default test" duration-ms="70224" started-at="2020-03-26T13:35:24Z" finished-at="2020-03-26T13:36:34Z">
+      <class name="testcases.Vistara">
+        <test-method status="PASS" signature="browser()[pri:0, instance:testcases.Vistara@7c16905e]" name="browser" is-config="true" duration-ms="12994" started-at="2020-03-26T13:35:24Z" finished-at="2020-03-26T13:35:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method status="PASS" signature="spic()[pri:0, instance:testcases.Spic@7c16905e]" name="spic" duration-ms="53347" started-at="2020-03-26T11:19:40Z" finished-at="2020-03-26T11:20:33Z">
+        <test-method status="PASS" signature="vistara()[pri:0, instance:testcases.Vistara@7c16905e]" name="vistara" duration-ms="57209" started-at="2020-03-26T13:35:37Z" finished-at="2020-03-26T13:36:34Z">
           <reporter-output>
             <line>
               <![CDATA[Login Passed]]>
@@ -53,11 +53,11 @@
               <![CDATA[<br> Time slected and confirmed]]>
             </line>
             <line>
-              <![CDATA[<br> Continued to last page]]>
+              <![CDATA[<br> Contined to last page]]>
             </line>
           </reporter-output>
-        </test-method> <!-- spic -->
-      </class> <!-- testcases.Spic -->
+        </test-method> <!-- vistara -->
+      </class> <!-- testcases.Vistara -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
