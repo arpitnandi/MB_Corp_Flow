@@ -30,6 +30,9 @@ public WebDriver driver;
     @FindBy(xpath="//*[@id=\"wellnessoption\"]/div[1]/a/span[1]/i")
 	WebElement booknowmonsanto;
     
+    @FindBy(xpath="//a[contains(text(),'Book Health Check Appointment')]")
+    WebElement healthtechm;
+    
     
     @FindBy(id="btnPopupClick")
     WebElement bookpopup;
@@ -65,10 +68,17 @@ public WebDriver driver;
 		booknow.click();
 		return new MbPage(driver);
 	}
+	
 	public MbPage bookMonsanto() {
 		booknowmonsanto.click();
 		return new MbPage(driver);
 	}
+	
+	public MbPage bookTechM() {
+		healthtechm.click();
+		return new MbPage(driver);
+	}
+	
 	public void popUpBook() {
 		bookpopup.click();
 	}

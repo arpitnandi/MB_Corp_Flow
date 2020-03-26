@@ -1,0 +1,9 @@
+package testcases;
+
+import org.testng.annotations.Test;
+
+public class ThreeM {
+  @Test
+  public void f() {
+  }
+}
