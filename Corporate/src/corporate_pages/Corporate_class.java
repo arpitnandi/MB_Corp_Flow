@@ -1,7 +1,6 @@
-package corporate_pages;
-
 import org.openqa.selenium.WebDriver;
 
+import corporate_pages.*;
 import generic.Constants;
 
 public class Corporate_class {
