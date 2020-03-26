@@ -1,29 +1,71 @@
 package testcases;
 
+import java.util.logging.Logger;
+
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import corporate_pages.Corporate_Landing;
+import corporate_pages.Corporate_class;
+import corporate_pages.HealthCheck;
+import corporate_pages.Login;
+import corporate_pages.MbPage;
+import corporate_pages.MultipleHealth;
+import corporate_pages.SopraHome;
 import generic.*;
 
-public class Monsanto 
-{
-	WebDriver Driver ;
+public class Monsanto extends Corporate_class{
+WebDriver driver;
 	
-	Utilities Utils = new Utilities();
-	Corporate_Landing Landing ;
+	static Logger Log = Logger.getLogger(Monsanto.class.getName());
+
+
+	@BeforeClass
+		public void browser() {
+		  System.setProperty("webdriver.chrome.driver", "C:\\chrome extension\\chromedriver.exe");
+		  driver=new ChromeDriver();
+		  driver.get("https://portal.medibuddy.in/Home.aspx");
+		  driver.manage().window().maximize();
+	}
 	
-	String UN="19831983@Monsanto";
-	String PW="Medi@123";
-	
+	@AfterClass
+	public void quit() {
+		driver.quit();
+	}
+
 	@Test
-	public void loginMosanto()
-	{
-		this.Driver = Utils.launchBrowser("Chrome");
-		Utils.launchApp("https:\\portal.medibuddy.in");
-		
-		Landing = new Corporate_Landing( this.Driver );
-		
-		Landing.portalLogin( UN , PW );
+	public void monsanto() throws InterruptedException {
+		 loginpage = new Login(driver);	    
+		 loginpage.login("19831983@Monsanto","Medi@123");
+		 Reporter.log("Login Passed");
+		 sopraHome = new SopraHome(driver);
+		 sopraHome.closePopUp();
+		 Thread.sleep(6000);
+		 healthcheck = new HealthCheck(driver);
+		 healthcheck.bookMonsanto();
+		 Reporter.log("<br> Health Check clickable | HealthCheckPage");
+		 Thread.sleep(20000);
+		 mbPage = new MbPage(driver);
+		 mbPage.citySelect();
+		 Reporter.log("<br> City Selection Passed");
+		 Thread.sleep(5000);
+		 mbPage.viewPackage();
+		 Reporter.log("<br> Sponsor Package able to select");
+		 Thread.sleep(4000);
+		 mbPage.bookAppointment();
+		 Reporter.log("<br> Book Apointment clickable");
+		 Thread.sleep(3000);
+		 mbPage.slotSelect();
+		 mbPage.selectTime();		 
+		 Thread.sleep(2000);
+		 mbPage.slotConfirm();
+		 Reporter.log("<br> Time slected and confirmed");
+		 Thread.sleep(6000);
+		 mbPage.continueNext();
+		 Reporter.log("<br> Contined to last page");
 	}
 }

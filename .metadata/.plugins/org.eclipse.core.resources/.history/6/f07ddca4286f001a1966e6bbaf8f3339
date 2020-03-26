@@ -1,0 +1,40 @@
+package testcases;
+
+import java.util.logging.Logger;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import corporate_pages.Corporate_class;
+import corporate_pages.Login;
+
+public class Amadeus extends Corporate_class {
+WebDriver driver;
+	
+	static Logger Log = Logger.getLogger(Amadeus.class.getName());
+
+
+	@BeforeClass
+		public void browser() {
+		  System.setProperty("webdriver.chrome.driver", "C:\\chrome extension\\chromedriver.exe");
+		  driver=new ChromeDriver();
+		  driver.get("https://portal.medibuddy.in/Home.aspx");
+		  driver.manage().window().maximize();
+	}
+	
+	@AfterClass
+	public void quit() {
+		driver.quit();
+	}
+
+	@Test
+	public void amadeus() throws InterruptedException {
+		 loginpage = new Login(driver);	    
+		 loginpage.login("Test123@realpage","01-01-1984");
+		 Reporter.log("Login Passed");
+  }
+}

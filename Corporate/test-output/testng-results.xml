@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
     <line>
       <![CDATA[Login Passed]]>
@@ -16,243 +16,92 @@
     <line>
       <![CDATA[<br> Book Apointment clickable]]>
     </line>
-    <line>
-      <![CDATA[<br> Time slected and confirmed]]>
-    </line>
-    <line>
-      <![CDATA[<br> Contined to last page]]>
-    </line>
-    <line>
-      <![CDATA[Login Passed]]>
-    </line>
-    <line>
-      <![CDATA[<br> Health Check clickable | HealthCheckPage]]>
-    </line>
-    <line>
-      <![CDATA[<br> City Selection Passed]]>
-    </line>
-    <line>
-      <![CDATA[<br> Sponsor Package able to select]]>
-    </line>
-    <line>
-      <![CDATA[<br> Book Apointment clickable]]>
-    </line>
-    <line>
-      <![CDATA[<br> Time slected and confirmed]]>
-    </line>
-    <line>
-      <![CDATA[<br> Contined to last page]]>
-    </line>
-    <line>
-      <![CDATA[Login Passed]]>
-    </line>
-    <line>
-      <![CDATA[HealthCheck Clickable |  HealthCheck Page]]>
-    </line>
-    <line>
-      <![CDATA[City Selection Passed]]>
-    </line>
-    <line>
-      <![CDATA[Sponsor Package selected]]>
-    </line>
-    <line>
-      <![CDATA[Book Appointment Done]]>
-    </line>
-    <line>
-      <![CDATA[Timings and Slot confirmed]]>
-    </line>
-    <line>
-      <![CDATA[Continued to last Page]]>
-    </line>
-    <line>
-      <![CDATA[Login Passed]]>
-    </line>
-    <line>
-      <![CDATA[HealthCheck Clickable | HealthCheck Page]]>
-    </line>
-    <line>
-      <![CDATA[City Selection Passed]]>
-    </line>
-    <line>
-      <![CDATA[Sponsor Package Selectable]]>
-    </line>
-    <line>
-      <![CDATA[Book Appointment Done]]>
-    </line>
-    <line>
-      <![CDATA[Timings and Slot Confirmed]]>
-    </line>
-    <line>
-      <![CDATA[Continued to Last Page]]>
-    </line>
-    <line>
-      <![CDATA[Login Passed]]>
-    </line>
-    <line>
-      <![CDATA[<br> Health Check clickable | HealthCheckPage]]>
-    </line>
-    <line>
-      <![CDATA[<br> City Selection Passed]]>
-    </line>
-    <line>
-      <![CDATA[<br> Sponsor Package able to select]]>
-    </line>
-    <line>
-      <![CDATA[<br> Book Apointment clickable]]>
-    </line>
-    <line>
-      <![CDATA[<br> Time slected and confirmed]]>
-    </line>
-    <line>
-      <![CDATA[<br> Contined to last page]]>
-    </line>
-    <line>
-      <![CDATA[Login Passed]]>
-    </line>
-    <line>
-      <![CDATA[<br> Health Check clickable | HealthCheckPage]]>
-    </line>
-    <line>
-      <![CDATA[<br> City Selection Passed]]>
-    </line>
-    <line>
-      <![CDATA[<br> Non Sponsor Package able to select]]>
-    </line>
-    <line>
-      <![CDATA[<br> Book Apointment clickable]]>
-    </line>
-    <line>
-      <![CDATA[<br> Time slected and confirmed]]>
-    </line>
-    <line>
-      <![CDATA[<br> Contined to last page]]>
-    </line>
-    <line>
-      <![CDATA[Login Passed]]>
-    </line>
-    <line>
-      <![CDATA[<br> Wellness clickable | WellnessPage]]>
-    </line>
-    <line>
-      <![CDATA[<br> Health Check clickable | HealthCheckPage]]>
-    </line>
-    <line>
-      <![CDATA[<br> City Selection Passed]]>
-    </line>
-    <line>
-      <![CDATA[<br> Sponsor Package able to select]]>
-    </line>
-    <line>
-      <![CDATA[<br> Book Apointment clickable]]>
-    </line>
-    <line>
-      <![CDATA[<br> Time slected and confirmed]]>
-    </line>
-    <line>
-      <![CDATA[<br> Contined to last page]]>
-    </line>
-    <line>
-      <![CDATA[Login Passed]]>
-    </line>
-    <line>
-      <![CDATA[<br> Health Check clickable | HealthCheckPage]]>
-    </line>
-    <line>
-      <![CDATA[<br> City Selection Passed]]>
-    </line>
-    <line>
-      <![CDATA[<br> Sponsor Package able to select]]>
-    </line>
-    <line>
-      <![CDATA[<br> Book Apointment clickable]]>
-    </line>
-    <line>
-      <![CDATA[<br> Time slected and confirmed]]>
-    </line>
-    <line>
-      <![CDATA[<br> Contined to last page]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="467894" started-at="2020-03-25T17:35:59Z" finished-at="2020-03-25T17:43:47Z">
+  <suite name="Default suite" duration-ms="55532" started-at="2020-03-26T07:14:58Z" finished-at="2020-03-26T07:15:53Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="467894" started-at="2020-03-25T17:35:59Z" finished-at="2020-03-25T17:43:47Z">
-      <class name="testcases.InvestCorp">
-        <test-method status="PASS" signature="browser()[pri:0, instance:testcases.InvestCorp@6767c1fc]" name="browser" is-config="true" duration-ms="6631" started-at="2020-03-25T17:42:50Z" finished-at="2020-03-25T17:42:57Z">
+    <test name="Default test" duration-ms="55532" started-at="2020-03-26T07:14:58Z" finished-at="2020-03-26T07:15:53Z">
+      <class name="testcases.BankofMaha">
+        <test-method status="PASS" signature="browser()[pri:0, instance:testcases.BankofMaha@2a2d45ba]" name="browser" is-config="true" duration-ms="11965" started-at="2020-03-26T07:14:58Z" finished-at="2020-03-26T07:15:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method status="PASS" signature="investCorp()[pri:0, instance:testcases.InvestCorp@6767c1fc]" name="investCorp" duration-ms="48779" started-at="2020-03-25T17:42:57Z" finished-at="2020-03-25T17:43:46Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Login Passed]]>
-            </line>
-            <line>
-              <![CDATA[<br> Health Check clickable | HealthCheckPage]]>
-            </line>
-            <line>
-              <![CDATA[<br> City Selection Passed]]>
-            </line>
-            <line>
-              <![CDATA[<br> Sponsor Package able to select]]>
-            </line>
-            <line>
-              <![CDATA[<br> Book Apointment clickable]]>
-            </line>
-            <line>
-              <![CDATA[<br> Time slected and confirmed]]>
-            </line>
-            <line>
-              <![CDATA[<br> Contined to last page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- investCorp -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.InvestCorp@6767c1fc]" name="quit" is-config="true" duration-ms="970" started-at="2020-03-25T17:43:46Z" finished-at="2020-03-25T17:43:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- testcases.InvestCorp -->
-      <class name="testcases.CbnI">
-        <test-method status="PASS" signature="browser()[pri:0, instance:testcases.CbnI@457e2f02]" name="browser" is-config="true" duration-ms="10583" started-at="2020-03-25T17:38:03Z" finished-at="2020-03-25T17:38:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser -->
-        <test-method status="PASS" signature="cbni()[pri:0, instance:testcases.CbnI@457e2f02]" name="cbni" duration-ms="52174" started-at="2020-03-25T17:38:14Z" finished-at="2020-03-25T17:39:06Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Login Passed]]>
-            </line>
-            <line>
-              <![CDATA[HealthCheck Clickable |  HealthCheck Page]]>
-            </line>
-            <line>
-              <![CDATA[City Selection Passed]]>
-            </line>
-            <line>
-              <![CDATA[Sponsor Package selected]]>
-            </line>
-            <line>
-              <![CDATA[Book Appointment Done]]>
-            </line>
-            <line>
-              <![CDATA[Timings and Slot confirmed]]>
-            </line>
-            <line>
-              <![CDATA[Continued to last Page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- cbni -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.CbnI@457e2f02]" name="quit" is-config="true" duration-ms="839" started-at="2020-03-25T17:39:06Z" finished-at="2020-03-25T17:39:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- testcases.CbnI -->
-      <class name="testcases.Ashok">
-        <test-method status="PASS" signature="browser()[pri:0, instance:testcases.Ashok@7823a2f9]" name="browser" is-config="true" duration-ms="11167" started-at="2020-03-25T17:35:59Z" finished-at="2020-03-25T17:36:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser -->
-        <test-method status="PASS" signature="ashok()[pri:0, instance:testcases.Ashok@7823a2f9]" name="ashok" duration-ms="51705" started-at="2020-03-25T17:36:10Z" finished-at="2020-03-25T17:37:02Z">
+        <test-method status="FAIL" signature="ashok()[pri:0, instance:testcases.BankofMaha@2a2d45ba]" name="ashok" duration-ms="42761" started-at="2020-03-26T07:15:10Z" finished-at="2020-03-26T07:15:53Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='42245aaaaaaaaaaaaaaaaaaaaaaaaaaa']//a[@class='btn btn-primary pull-right clearfix btn-xs'][contains(text(),'Select slot')]"}
+  (Session info: chrome=80.0.3987.149)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DOC-W-SHREYAS', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\DocsApp\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 80.0.3987.149, webStorageEnabled: true}
+Session ID: a0ba98719820bf1bd000a691038f5e0f
+*** Element info: {Using=xpath, value=//div[@id='42245aaaaaaaaaaaaaaaaaaaaaaaaaaa']//a[@class='btn btn-primary pull-right clearfix btn-xs'][contains(text(),'Select slot')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='42245aaaaaaaaaaaaaaaaaaaaaaaaaaa']//a[@class='btn btn-primary pull-right clearfix btn-xs'][contains(text(),'Select slot')]"}
+  (Session info: chrome=80.0.3987.149)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DOC-W-SHREYAS', ip: '192.168.1.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\DocsApp\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 80.0.3987.149, webStorageEnabled: true}
+Session ID: a0ba98719820bf1bd000a691038f5e0f
+*** Element info: {Using=xpath, value=//div[@id='42245aaaaaaaaaaaaaaaaaaaaaaaaaaa']//a[@class='btn btn-primary pull-right clearfix btn-xs'][contains(text(),'Select slot')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.click(Unknown Source)
+at corporate_pages.MbPage.slotSelect(MbPage.java:128)
+at testcases.BankofMaha.ashok(BankofMaha.java:59)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[Login Passed]]>
@@ -268,198 +117,14 @@
             </line>
             <line>
               <![CDATA[<br> Book Apointment clickable]]>
-            </line>
-            <line>
-              <![CDATA[<br> Time slected and confirmed]]>
-            </line>
-            <line>
-              <![CDATA[<br> Contined to last page]]>
             </line>
           </reporter-output>
         </test-method> <!-- ashok -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.Ashok@7823a2f9]" name="quit" is-config="true" duration-ms="833" started-at="2020-03-25T17:37:02Z" finished-at="2020-03-25T17:37:03Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.BankofMaha@2a2d45ba]" name="quit" is-config="true" duration-ms="790" started-at="2020-03-26T07:15:53Z" finished-at="2020-03-26T07:15:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- testcases.Ashok -->
-      <class name="testcases.Ngsl">
-        <test-method status="PASS" signature="browser()[pri:0, instance:testcases.Ngsl@39aeed2f]" name="browser" is-config="true" duration-ms="7733" started-at="2020-03-25T17:39:54Z" finished-at="2020-03-25T17:40:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser -->
-        <test-method status="PASS" signature="ngsl()[pri:0, instance:testcases.Ngsl@39aeed2f]" name="ngsl" duration-ms="50536" started-at="2020-03-25T17:40:02Z" finished-at="2020-03-25T17:40:53Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Login Passed]]>
-            </line>
-            <line>
-              <![CDATA[<br> Health Check clickable | HealthCheckPage]]>
-            </line>
-            <line>
-              <![CDATA[<br> City Selection Passed]]>
-            </line>
-            <line>
-              <![CDATA[<br> Sponsor Package able to select]]>
-            </line>
-            <line>
-              <![CDATA[<br> Book Apointment clickable]]>
-            </line>
-            <line>
-              <![CDATA[<br> Time slected and confirmed]]>
-            </line>
-            <line>
-              <![CDATA[<br> Contined to last page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- ngsl -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.Ngsl@39aeed2f]" name="quit" is-config="true" duration-ms="777" started-at="2020-03-25T17:40:53Z" finished-at="2020-03-25T17:40:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- testcases.Ngsl -->
-      <class name="testcases.Transafe">
-        <test-method status="PASS" signature="browser()[pri:0, instance:testcases.Transafe@724af044]" name="browser" is-config="true" duration-ms="7219" started-at="2020-03-25T17:40:53Z" finished-at="2020-03-25T17:41:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser -->
-        <test-method status="PASS" signature="transafe()[pri:0, instance:testcases.Transafe@724af044]" name="transafe" duration-ms="47789" started-at="2020-03-25T17:41:01Z" finished-at="2020-03-25T17:41:48Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Login Passed]]>
-            </line>
-            <line>
-              <![CDATA[<br> Health Check clickable | HealthCheckPage]]>
-            </line>
-            <line>
-              <![CDATA[<br> City Selection Passed]]>
-            </line>
-            <line>
-              <![CDATA[<br> Non Sponsor Package able to select]]>
-            </line>
-            <line>
-              <![CDATA[<br> Book Apointment clickable]]>
-            </line>
-            <line>
-              <![CDATA[<br> Time slected and confirmed]]>
-            </line>
-            <line>
-              <![CDATA[<br> Contined to last page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- transafe -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.Transafe@724af044]" name="quit" is-config="true" duration-ms="800" started-at="2020-03-25T17:41:48Z" finished-at="2020-03-25T17:41:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- testcases.Transafe -->
-      <class name="testcases.RealPage">
-        <test-method status="PASS" signature="browser()[pri:0, instance:testcases.RealPage@4678c730]" name="browser" is-config="true" duration-ms="6490" started-at="2020-03-25T17:41:49Z" finished-at="2020-03-25T17:41:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser -->
-        <test-method status="PASS" signature="realPage()[pri:0, instance:testcases.RealPage@4678c730]" name="realPage" duration-ms="53907" started-at="2020-03-25T17:41:56Z" finished-at="2020-03-25T17:42:50Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Login Passed]]>
-            </line>
-            <line>
-              <![CDATA[<br> Wellness clickable | WellnessPage]]>
-            </line>
-            <line>
-              <![CDATA[<br> Health Check clickable | HealthCheckPage]]>
-            </line>
-            <line>
-              <![CDATA[<br> City Selection Passed]]>
-            </line>
-            <line>
-              <![CDATA[<br> Sponsor Package able to select]]>
-            </line>
-            <line>
-              <![CDATA[<br> Book Apointment clickable]]>
-            </line>
-            <line>
-              <![CDATA[<br> Time slected and confirmed]]>
-            </line>
-            <line>
-              <![CDATA[<br> Contined to last page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- realPage -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.RealPage@4678c730]" name="quit" is-config="true" duration-ms="828" started-at="2020-03-25T17:42:50Z" finished-at="2020-03-25T17:42:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- testcases.RealPage -->
-      <class name="testcases.Sbi">
-        <test-method status="PASS" signature="browser()[pri:0, instance:testcases.Sbi@4cc0edeb]" name="browser" is-config="true" duration-ms="10553" started-at="2020-03-25T17:37:03Z" finished-at="2020-03-25T17:37:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser -->
-        <test-method status="PASS" signature="sbi()[pri:0, instance:testcases.Sbi@4cc0edeb]" name="sbi" duration-ms="49075" started-at="2020-03-25T17:37:13Z" finished-at="2020-03-25T17:38:02Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Login Passed]]>
-            </line>
-            <line>
-              <![CDATA[<br> Health Check clickable | HealthCheckPage]]>
-            </line>
-            <line>
-              <![CDATA[<br> City Selection Passed]]>
-            </line>
-            <line>
-              <![CDATA[<br> Sponsor Package able to select]]>
-            </line>
-            <line>
-              <![CDATA[<br> Book Apointment clickable]]>
-            </line>
-            <line>
-              <![CDATA[<br> Time slected and confirmed]]>
-            </line>
-            <line>
-              <![CDATA[<br> Contined to last page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- sbi -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.Sbi@4cc0edeb]" name="quit" is-config="true" duration-ms="820" started-at="2020-03-25T17:38:02Z" finished-at="2020-03-25T17:38:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- testcases.Sbi -->
-      <class name="testcases.Hccb">
-        <test-method status="PASS" signature="browser()[pri:0, instance:testcases.Hccb@5c7fa833]" name="browser" is-config="true" duration-ms="8573" started-at="2020-03-25T17:39:07Z" finished-at="2020-03-25T17:39:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser -->
-        <test-method status="PASS" signature="hccb()[pri:0, instance:testcases.Hccb@5c7fa833]" name="hccb" duration-ms="38266" started-at="2020-03-25T17:39:15Z" finished-at="2020-03-25T17:39:54Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Login Passed]]>
-            </line>
-            <line>
-              <![CDATA[HealthCheck Clickable | HealthCheck Page]]>
-            </line>
-            <line>
-              <![CDATA[City Selection Passed]]>
-            </line>
-            <line>
-              <![CDATA[Sponsor Package Selectable]]>
-            </line>
-            <line>
-              <![CDATA[Book Appointment Done]]>
-            </line>
-            <line>
-              <![CDATA[Timings and Slot Confirmed]]>
-            </line>
-            <line>
-              <![CDATA[Continued to Last Page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- hccb -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.Hccb@5c7fa833]" name="quit" is-config="true" duration-ms="805" started-at="2020-03-25T17:39:54Z" finished-at="2020-03-25T17:39:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- testcases.Hccb -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- testcases.BankofMaha -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
