@@ -65,6 +65,9 @@ public class MbPage {
     
     @FindBy(xpath="//div[@id='48616aaaaaaaaaaaaaaaaaaaaaaaaaaa']//a[@class='btn btn-primary pull-right clearfix btn-xs'][contains(text(),'Select slot')]")
     WebElement selectSlotashok;
+  
+    @FindBy(xpath="//div[@id='48609aaaaaaaaaaaaaaaaaaaaaaaaaaa']//a[@class='btn btn-primary pull-right clearfix btn-xs'][contains(text(),'Select slot')]")
+    WebElement selectSlotspic;
  
   
     @FindBy(xpath="//label[contains(text(),'08:00 AM')]")
@@ -154,6 +157,10 @@ public class MbPage {
 	
 	public void slotSelectAshok() {
 		selectSlotashok.click();
+	}
+	
+	public void slotSelectSpic() {
+		selectSlotspic.click();
 	}
 		
 	public void selectTime() {
