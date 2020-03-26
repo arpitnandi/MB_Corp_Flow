@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.Spic">
+      <class name="testcases.Vistara">
         <methods>
-          <include name="spic"/>
+          <include name="vistara"/>
           <include name="browser"/>
         </methods>
-      </class> <!-- testcases.Spic -->
+      </class> <!-- testcases.Vistara -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

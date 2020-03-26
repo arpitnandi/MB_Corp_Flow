@@ -33,6 +33,15 @@ public class MbPage {
     @FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/img[1]")
     WebElement cityKolkata;
     
+    @FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/img[1]")
+    WebElement citydelhi;
+    
+    @FindBy(xpath="/html/body/div[1]/div/div/div/div[1]/div/img")
+    WebElement cityLumunus;
+
+    @FindBy(xpath="/html/body/div[1]/div/div/div/div[3]/div/div")
+    WebElement cityvishaka;
+    
     @FindBy(xpath="//div[@class='action bold mdbTxt text-right']//span[contains(text(),'View Package')]")
 	WebElement viewpkg;
     
@@ -68,8 +77,19 @@ public class MbPage {
   
     @FindBy(xpath="//div[@id='48609aaaaaaaaaaaaaaaaaaaaaaaaaaa']//a[@class='btn btn-primary pull-right clearfix btn-xs'][contains(text(),'Select slot')]")
     WebElement selectSlotspic;
- 
   
+    @FindBy(xpath="//div[@id='42265aaaaaaaaaaaaaaaaaaaaaaaaaaa']//a[@class='btn btn-primary pull-right clearfix btn-xs'][contains(text(),'Select slot')]")
+    WebElement selectSlottitan;
+    
+    @FindBy(xpath="//div[@id='60624aaaaaaaaaaaaaaaaaaaaaaaaaaa']//a[@class='btn btn-primary pull-right clearfix btn-xs'][contains(text(),'Select slot')]")
+    WebElement selectSlotwns;
+  
+    @FindBy(xpath="//*[@id=\"62013aaaaaaaaaaaaaaaaaaaaaaaaaaa\"]/div[1]/div[2]/span/a")
+    WebElement selectSlotpilkington;
+  
+    @FindBy(xpath="//*[@id=\"42308aaaaaaaaaaaaaaaaaaaaaaaaaaa\"]/div[1]/div[2]/span/a")
+    WebElement selectSlotlumunus;
+    
     @FindBy(xpath="//label[contains(text(),'08:00 AM')]")
 	WebElement timings;
     
@@ -112,6 +132,19 @@ public class MbPage {
 	public void cityTransafeKolkata() {
 		cityKolkata.click();
 	}
+	
+	public void cityDelhi() {
+		citydelhi.click();
+	}
+	
+	public void cityVishaka() {
+		cityvishaka.click();
+	}
+	
+	public void citySelectLumunus() {
+		cityLumunus.click();
+	}
+	
 	
 	public void viewPackage() {
 		viewpkg.click();
@@ -161,6 +194,22 @@ public class MbPage {
 	
 	public void slotSelectSpic() {
 		selectSlotspic.click();
+	}
+	
+	public void slotSelectTitan() {
+		selectSlottitan.click();
+	}
+	
+	public void slotSelectWnsGlobal() {
+		selectSlotwns.click();
+	}
+	
+	public void slotSelectPilkington() {
+		selectSlotpilkington.click();
+	}
+	
+	public void slotSelectLumunus() {
+		selectSlotlumunus.click();
 	}
 		
 	public void selectTime() {
