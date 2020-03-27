@@ -1,0 +1,117 @@
+package corporate_pages;
+
+import java.util.ArrayList;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import generic.Constants;
+
+public class HealthCheck {
+	
+public WebDriver driver;
+
+    public HealthCheck(WebDriver driver)
+    {
+	this.driver=driver;
+	PageFactory.initElements(driver, this);
+	}	
+    
+    @FindBy(xpath="//a[text()='Health Check']")
+    WebElement healthcheck;
+
+    @FindBy(xpath="//a[contains(text(),'Book now')]")
+    WebElement booknow;
+    
+    @FindBy(id="btnPopupClick")
+    WebElement bookpopup;
+    
+    @FindBy(xpath="/html/body/div[1]/div/div/div/div[1]/div[1]/img")
+	WebElement city;
+    
+    @FindBy(xpath="//div[@class='action bold mdbTxt text-right']//span[contains(text(),'View Package')]")
+	WebElement viewpkg;
+    
+    @FindBy(xpath="//button[@class='btn btn-primary']")
+	WebElement bookapoint;
+    
+    @FindBy(xpath="//div[@id='42245aaaaaaaaaaaaaaaaaaaaaaaaaaa']//a[@class='btn btn-primary pull-right clearfix btn-xs'][contains(text(),'Select slot')]")
+	WebElement selectslot;
+    
+    @FindBy(xpath="//label[contains(text(),'08:00 AM')]")
+	WebElement timings;
+    
+    @FindBy(xpath="//a[contains(text(),'Confirm slot')]")
+	WebElement confirmTime;
+    
+    @FindBy(xpath="//span[contains(text(),'Continue')]")
+	WebElement cont;
+	
+	
+	
+	public void health() {
+		healthcheck.click();
+	}	
+	
+	public MbPage book() {
+		booknow.click();
+		return new MbPage(driver);
+	}
+	
+	public void popUpBook() {
+		bookpopup.click();
+	}
+	
+	
+	public void WaitExplicitly()		{
+		WebDriverWait wait=new WebDriverWait(driver, 60);
+		wait.until(ExpectedConditions.visibilityOf(city));
+		
+	}	
+		
+	public void citySelect() {
+		city.click();
+	}
+	
+	
+	public void viewPackage() {
+		viewpkg.click();
+	}	
+	
+	
+	public void bookAppointment() {
+		bookapoint.click();
+	}
+	
+	
+	public void slotSelect() {
+		selectslot.click();
+	}
+		
+	public void selectTime() {
+		timings.click();
+	}
+		
+	public void slotConfirm() {
+		confirmTime.click();
+	}	
+	
+	public void continueNext() {
+		cont.click();
+	}
+	
+	public void windowHandle() {
+		ArrayList<String> handle = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(handle.get(1)); //Tab number
+
+		//Can change it for next tab like that or previous:
+
+//		driver.switchTo().window(handle.get(1));
+//		driver.close();
+//		driver.switchTo().window(handle.get(0));
+	}
+}

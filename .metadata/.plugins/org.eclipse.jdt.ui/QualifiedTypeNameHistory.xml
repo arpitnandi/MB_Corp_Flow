@@ -33,10 +33,20 @@
 <fullyQualifiedTypeName name="corporate_pages.SopraHome"/>
 <fullyQualifiedTypeName name="corporate_pages.HealthCheck"/>
 <fullyQualifiedTypeName name="corporate_pages.MbPage"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
-<fullyQualifiedTypeName name="corporate_pages.Corporate_class"/>
 <fullyQualifiedTypeName name="corporate_pages.MultipleHealth"/>
+<fullyQualifiedTypeName name="org.testng.annotations.AfterClass"/>
+<fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="testcases.Analog"/>
+<fullyQualifiedTypeName name="org.testng.Reporter"/>
+<fullyQualifiedTypeName name="testcases.CbnI"/>
+<fullyQualifiedTypeName name="testcases.Hccb"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="testcases.Transafe"/>
+<fullyQualifiedTypeName name="testcases.Sbi"/>
+<fullyQualifiedTypeName name="testcases.Ngsl"/>
+<fullyQualifiedTypeName name="testcases.InvestCorp"/>
+<fullyQualifiedTypeName name="corporate_pages.Corporate_class"/>
+<fullyQualifiedTypeName name="testcases.Ashok"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
-<fullyQualifiedTypeName name="org.testng.annotations.AfterClass"/>
 </qualifiedTypeNameHistroy>

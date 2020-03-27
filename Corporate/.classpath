@@ -10,5 +10,6 @@
 	<classpathentry kind="lib" path="lib/guava-25.0-jre.jar"/>
 	<classpathentry kind="lib" path="lib/okhttp-3.11.0.jar"/>
 	<classpathentry kind="lib" path="lib/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/DocsApp/Downloads/log4j-1.2.17/apache-log4j-1.2.17/log4j-1.2.17.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

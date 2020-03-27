@@ -1,7 +1,10 @@
 package testcases;
 
+import java.util.logging.Logger;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -15,6 +18,9 @@ import corporate_pages.SopraHome;
 
 public class RealPage extends Corporate_class {
 	WebDriver driver;
+	
+	static Logger Log = Logger.getLogger(RealPage.class.getName());
+
 
 	@BeforeClass
 		public void browser() {
@@ -30,31 +36,38 @@ public class RealPage extends Corporate_class {
 	}
 
 	@Test
-	public void analog() throws InterruptedException {
+	public void realPage() throws InterruptedException {
 		 loginpage = new Login(driver);	    
 		 loginpage.login("Test123@realpage","01-01-1984");
-		 
+		 Reporter.log("Login Passed");
 		 sopraHome = new SopraHome(driver);
 		 sopraHome.closePopUp();
 		 Thread.sleep(2000);
 		 sopraHome.selectWellness();
 		 Thread.sleep(2000);
-		 
+		 Reporter.log("<br> Wellness clickable | WellnessPage");
 		 multiHealth = new MultipleHealth(driver);
 		 multiHealth.hoverHealth();
+		 Reporter.log("<br> Health Check clickable | HealthCheckPage");
 		 Thread.sleep(20000);
 		 mbPage = new MbPage(driver);
 		 mbPage.cityRealImage();
+		 Reporter.log("<br> City Selection Passed");
 		 Thread.sleep(5000);
 		 mbPage.viewPackage();
+		 Reporter.log("<br> Sponsor Package able to select");
 		 Thread.sleep(2000);
 		 mbPage.bookAppointment();
+		 Reporter.log("<br> Book Apointment clickable");
 		 Thread.sleep(3000);
 		 mbPage.slotSelectRealImage();
-		 mbPage.selectTime();
+		 mbPage.selectTime();		 
 		 Thread.sleep(2000);
 		 mbPage.slotConfirm();
+		 Reporter.log("<br> Time slected and confirmed");
 		 Thread.sleep(6000);
 		 mbPage.continueNext();
+		 Reporter.log("<br> Contined to last page");
+		 
   }
 }

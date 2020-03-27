@@ -16,6 +16,9 @@ public class SopraHome {
 	@FindBy(xpath="//div[@class='well']")
 	WebElement wellness;
 	
+	@FindBy(xpath="//*[@id=\"MediForm\"]/section[1]/div/div/div/div/ul/li[2]/div[1]")
+	WebElement wellnesslumunus;
+	
 	@FindBy(xpath="//button[@class='btn btn-default']")
 	WebElement close;
 	
@@ -27,5 +30,8 @@ public class SopraHome {
 		wellness.click();
 	}
 	
+	public void selectWellnessLumunus() {
+		wellnesslumunus.click();
+	}
 
 }

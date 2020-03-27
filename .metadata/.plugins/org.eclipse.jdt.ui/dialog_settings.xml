@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="C:\Selenium\libs" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="C:\Users\DocsApp\Downloads\log4j-1.2.17\apache-log4j-1.2.17" key="org.eclipse.jdt.ui.lastextjar"/>
 	<section name="NewClassWizardPage">
 		<item value="false" key="create_constructor"/>
 		<item value="true" key="create_unimplemented"/>
