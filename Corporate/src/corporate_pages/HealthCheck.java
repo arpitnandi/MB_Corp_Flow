@@ -1,5 +1,7 @@
 package corporate_pages;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,12 +26,6 @@ public WebDriver driver;
 
     @FindBy(xpath="//a[contains(text(),'Book now')]")
     WebElement booknow;
-    
-    @FindBy(xpath="/html/body/div[1]/div/div/div/div[1]/div[1]/img")
-	WebElement city;
-    
-    @FindBy(xpath="//div[@class='action bold mdbTxt text-right']//span[contains(text(),'View Package')]")
-	WebElement viewpkg;
     
     @FindBy(xpath="//button[@class='btn btn-primary']")
 	WebElement bookapoint;
@@ -93,5 +89,39 @@ public WebDriver driver;
 	
 	public void continueNext() {
 		cont.click();
+	}
+    
+    @FindBy(xpath="//*[@id=\"wellnessoption\"]/div[1]/a/span[1]/i")
+	WebElement booknowmonsanto;
+    
+    
+    @FindBy(id="btnPopupClick")
+    WebElement bookpopup;
+ 
+    @FindBy(xpath="/html/body/div[1]/div/div/div/div[1]/div[1]/img")
+	WebElement city;
+    
+    @FindBy(xpath="//div[@class='action bold mdbTxt text-right']//span[contains(text(),'View Package')]")
+	WebElement viewpkg;
+    
+	
+	
+	public MbPage bookMonsanto() {
+		booknowmonsanto.click();
+		return new MbPage(driver);
+	}
+	public void popUpBook() {
+		bookpopup.click();
+	}
+
+	public void windowHandle() {
+		ArrayList<String> handle = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(handle.get(1)); //Tab number
+
+		//Can change it for next tab like that or previous:
+
+//		driver.switchTo().window(handle.get(1));
+//		driver.close();
+//		driver.switchTo().window(handle.get(0));
 	}
 }
